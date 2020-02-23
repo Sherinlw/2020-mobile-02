@@ -15,7 +15,7 @@ public class Register extends AppCompatActivity {
     }
 
     public void clickNext(View view) {
-        Intent intent = new Intent(Register.this, Profile.class);
+        Intent intent = new Intent(Register.this, ProfileActivity.class);
         startActivity(intent);
     }
 }
