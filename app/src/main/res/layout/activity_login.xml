@@ -2,6 +2,113 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical">
+    android:background="#FFFFFF"
+    tools:context=".LoginActivity">
 
-</LinearLayout>
+    <ImageView
+        android:id="@+id/img1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/red_rectangle"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/logo"
+        app:layout_constraintBottom_toBottomOf="@+id/img1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/img1" />
+
+    <TextView
+        android:id="@+id/teks1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="25dp"
+        android:fontFamily="@font/futura_pt_demibold"
+        android:text="Continuing as Service Provider"
+        android:textColor="#313131"
+        android:textSize="36sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/img1" />
+
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/btn_white_small"
+        android:text="Login"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textColor="#E04848"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/teks1" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="217dp"
+        android:layout_height="47dp"
+        android:layout_marginLeft="160dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/btn_red_medium"
+        android:text="Register"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/teks1" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="347dp"
+        android:layout_height="53dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/btn_white_large"
+        android:drawableStart="@drawable/google_logo"
+        android:paddingStart="10dp"
+        android:text="Continue with Google"
+        android:textAllCaps="false"
+        android:textColor="#D32222"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="343dp"
+        android:layout_height="45dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/btn_blue_large"
+        android:drawableStart="@drawable/fb_logo"
+        android:paddingStart="10dp"
+        android:text="Continue with Facebook"
+        android:textAllCaps="false"
+        android:textColor="#2239AC"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button2" />
+
+    <TextView
+        android:id="@+id/end_teks"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Enter as a guest"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button3" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
